@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 200%;
+  margin: 0 auto;
+  color: #3f464d;
+  background-color: rgb(162, 189, 238);
+}
+
+a {
+  all: unset;
+}
+
+a:link,
+a:visited,
+a:active,
+a:hover {
+  text-decoration: none;
+  color: #3f464d;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.inner {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.head-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head-brand,
+.head-git {
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.head-brand a:hover,
+.head-git a:hover {
+  color: #2186c4;
+}
+
+section {
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.main {
+  height: 360px;
+  background-image: url("../img/coding.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.title-container {
+  padding: 100px 0px;
+  color: white;
+}
+
+.title,
+.message {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 0.8rem;
+}
+
+@media only screen and (min-width: 1200px) {
+  .inner {
+    max-width: 1200px;
+  }
+}
