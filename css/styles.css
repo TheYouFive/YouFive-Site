@@ -1,3 +1,5 @@
+@import "./aboutme.css";
+
 * {
   box-sizing: border-box;
 }
@@ -7,7 +9,7 @@ body {
   height: 200%;
   margin: 0 auto;
   color: #3f464d;
-  background-color: rgb(162, 189, 238);
+  background-color: #ffffff;
 }
 
 a {
@@ -36,7 +38,7 @@ header {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
 }
 
 .head-container {
@@ -47,15 +49,13 @@ header {
   align-items: center;
 }
 
-.head-brand,
-.head-git {
+.head-brand {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1em;
   cursor: pointer;
 }
 
-.head-brand a:hover,
-.head-git a:hover {
+.head-brand a:hover {
   color: #2186c4;
 }
 
@@ -85,15 +85,93 @@ section {
   color: white;
 }
 
-.title,
-.message {
+.title {
   font-size: 2rem;
   font-weight: bold;
   padding-bottom: 0.8rem;
 }
 
+.message {
+  font-size: 1.2rem;
+  padding-bottom: 0.8rem;
+}
+
+.skill-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.skill {
+  width: 20%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem;
+  font-size: 1.2rem;
+}
+
+.skill-title {
+  margin: 0 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.skill-title:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #ee393f;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.skill-title:hover:after {
+  transform: scaleX(1);
+}
+
+.skill-title:hover {
+  color: #2186c4;
+}
+
+.home-icon__style {
+  font-size: 1.4rem;
+  color: #2147c4;
+}
+
+.aboutme-icon__style {
+  font-size: 1.4rem;
+  color: #f1921c;
+}
+
+.skills-icon__style {
+  font-size: 1.4rem;
+  color: #bdbd04;
+}
+
+.portfolio-icon__style {
+  font-size: 1.4rem;
+  color: #d673c1;
+}
+
+.contect-icon__style {
+  font-size: 1.4rem;
+  color: #c0103c;
+}
+
 @media only screen and (min-width: 1200px) {
   .inner {
     max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 1011px) {
+  .skill-container {
+    white-space: nowrap;
+    overflow-x: hidden;
   }
 }
