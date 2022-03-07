@@ -321,7 +321,8 @@ section {
   }
 
   .skill {
-    width: 17.5%;
+    width: 14.7%;
+    height: 100%;
     background-color: #ffffff;
     display: flex;
     justify-content: center;
@@ -376,6 +377,7 @@ section {
   }
 
   .skill-title {
+    display: flex;
     font-weight: bold;
     cursor: pointer;
     font-size: 12px;
