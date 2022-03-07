@@ -173,7 +173,7 @@ section {
 @media only screen and (max-width: 1011px) {
   .skill-container {
     white-space: nowrap;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .text-container {
@@ -200,7 +200,7 @@ section {
 @media only screen and (max-width: 750px) {
   .skill-container {
     white-space: nowrap;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .text-container {
@@ -239,7 +239,7 @@ section {
 @media only screen and (max-width: 660px) {
   .skill-container {
     white-space: nowrap;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .text-container {
