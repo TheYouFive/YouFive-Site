@@ -102,7 +102,6 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  overflow: hidden;
 }
 
 .skill {
@@ -173,7 +172,6 @@ section {
 @media only screen and (max-width: 1011px) {
   .skill-container {
     white-space: nowrap;
-    overflow: hidden;
   }
 
   .text-container {
@@ -200,7 +198,6 @@ section {
 @media only screen and (max-width: 750px) {
   .skill-container {
     white-space: nowrap;
-    overflow: hidden;
   }
 
   .text-container {
@@ -238,8 +235,47 @@ section {
 
 @media only screen and (max-width: 660px) {
   .skill-container {
-    white-space: nowrap;
-    overflow: hidden;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .skill {
+    width: 15%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .home-icon__style {
+    font-size: 1rem;
+    color: #2147c4;
+  }
+
+  .aboutme-icon__style {
+    font-size: 1rem;
+    color: #f1921c;
+  }
+
+  .skills-icon__style {
+    font-size: 1rem;
+    color: #bdbd04;
+  }
+
+  .portfolio-icon__style {
+    font-size: 1rem;
+    color: #d673c1;
+  }
+
+  .contect-icon__style {
+    font-size: 1rem;
+    color: #c0103c;
   }
 
   .text-container {
@@ -262,10 +298,88 @@ section {
   }
 
   .skill-title {
-    margin: 0 0.5rem;
     font-weight: bold;
     cursor: pointer;
     font-size: 12px;
+    margin-left: 2px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .skill-container {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .skill {
+    width: 17.5%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .home-icon__style {
+    font-size: 1rem;
+    color: #2147c4;
+  }
+
+  .aboutme-icon__style {
+    font-size: 1rem;
+    color: #f1921c;
+  }
+
+  .skills-icon__style {
+    font-size: 1rem;
+    color: #bdbd04;
+  }
+
+  .portfolio-icon__style {
+    font-size: 1rem;
+    color: #d673c1;
+  }
+
+  .contect-icon__style {
+    font-size: 1rem;
+    color: #c0103c;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 11px;
+    font-weight: 600;
+    position: absolute;
+    right: 30px;
+    top: 58px;
+  }
+
+  .aboutme-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    white-space: nowrap;
+  }
+
+  .skill-title {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 2px;
   }
 
   .title {
