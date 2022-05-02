@@ -1,0 +1,31 @@
+.skill-container {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  cursor: pointer;
+}
+
+.skill-title {
+  background: rgb(255, 255, 255);
+  width: 20%;
+  transition: 0.5s;
+}
+
+.skill-title:hover {
+  background: tomato;
+  width: 23%;
+}
+
+.skill {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.skill:hover {
+  color: white;
+  transition: 0.5s;
+}

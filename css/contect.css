@@ -1,0 +1,203 @@
+.content-container {
+  position: relative;
+  margin-top: 250px;
+  height: 60vh;
+  display: flex;
+  background: rgba(85, 182, 247, 0.1);
+}
+
+.aboutme {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.aboutme-image {
+  position: absolute;
+  left: 20rem;
+  top: 6rem;
+  width: 20%;
+  border-radius: 20px;
+}
+
+.aboutme-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.aboutme-text {
+  right: 20rem;
+  top: 10.5rem;
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.title-integrated {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(29, 38, 88);
+}
+
+.skills-container {
+  margin-top: 500px;
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.skills-content__image {
+  margin-top: 30px;
+  width: 700px;
+  height: 400px;
+}
+
+.skills-content__image img {
+  width: 700px;
+  height: 400px;
+}
+
+.skills-content-progress-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-content-progress__text {
+  margin-top: 30px;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills-content-progress__bar {
+  position: relative;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.progress-bar {
+  position: absolute;
+  height: 10px;
+  width: 600px;
+  background-color: lightgrey;
+  border-radius: 10px;
+}
+
+.progress-bar-per {
+  position: absolute;
+  left: 0;
+  height: 10px;
+  width: 200px;
+  background-color: rgb(6, 4, 141);
+  border-radius: 10px;
+}
+
+.progress-bar-per2 {
+  background-color: rgb(4, 207, 92);
+  width: 100px;
+}
+
+.skills-content-progress__text {
+  font-weight: bold;
+}
+
+.portfolio-container {
+  margin-top: 500px;
+}
+
+.contect-container {
+  margin-top: 500px;
+}
+
+.portfolio-container {
+  display: flex;
+  background: rgba(85, 182, 247, 0.1);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-content-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60vw;
+  height: 50vh;
+}
+
+.portfolio-content {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  height: 30vh;
+  width: 10vw;
+  transition: 0.5s;
+  box-shadow: 10px 10px 10px 0px rgba(25, 42, 70, 0.2);
+}
+
+.portfolio-content:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.portfolio-content-dec {
+  height: 100%;
+  border-top: 1px solid black;
+}
+
+.portfolio-content-image {
+  height: 60vh;
+}
+
+.portfolio-content-image img {
+  border-radius: 10px 10px 0 0;
+  height: 100%;
+}
+
+.portfolio-content-dec-textbox {
+  height: 100%;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-content-dec-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-content-dec-title span {
+  margin: 0 5px 0 5px;
+}
+
+.portfolio-content-dec-title span:nth-child(2) {
+  background-color: rgb(47, 48, 89);
+  font-size: 12px;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.portfolio-content-dec-textbox span:nth-child(1) {
+  margin-top: 10px;
+}
+
+.portfolio-content-dec-textbox span:nth-child(2) {
+  margin-top: 10px;
+}
