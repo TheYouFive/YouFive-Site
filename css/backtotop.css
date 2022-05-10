@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 50px;
-  right: 50px;
+  bottom: 30px;
+  right: 30px;
   z-index: 9999;
   position: fixed;
   height: 50px;
@@ -11,7 +11,6 @@
   background-color: rgb(31, 18, 105);
   border-radius: 50%;
   cursor: pointer;
-  visibility: hidden;
   opacity: 0;
   transition: 0.3s;
 }
@@ -23,12 +22,11 @@
   font-size: 1.5rem;
 }
 
-#backtotop.show {
+#backtotop.btn-appear {
   opacity: 1;
-  visibility: visible;
   background-color: rgb(31, 18, 105);
 }
 
-#backtotop.show:hover {
+#backtotop.btn-appear:hover {
   background-color: rgb(57, 32, 197);
 }

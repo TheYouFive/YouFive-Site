@@ -1,7 +1,7 @@
 .content-container {
   position: relative;
   margin-top: 250px;
-  height: 60vh;
+  height: 500px;
   display: flex;
   background: rgba(85, 182, 247, 0.1);
 }
@@ -15,9 +15,9 @@
 
 .aboutme-image {
   position: absolute;
-  left: 20rem;
+  left: 25rem;
   top: 6rem;
-  width: 20%;
+  width: 300px;
   border-radius: 20px;
 }
 
@@ -29,7 +29,7 @@
 
 .aboutme-text {
   right: 20rem;
-  top: 10.5rem;
+  top: 10rem;
   position: absolute;
   font-size: 1.2rem;
   font-weight: bold;
@@ -117,12 +117,9 @@
   margin-top: 500px;
 }
 
-.contect-container {
-  margin-top: 500px;
-}
-
 .portfolio-container {
   display: flex;
+  height: 500px;
   background: rgba(85, 182, 247, 0.1);
   flex-direction: column;
   justify-content: center;
@@ -131,7 +128,7 @@
 
 .portfolio-content-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 60vw;
   height: 50vh;
@@ -142,8 +139,8 @@
   flex-direction: column;
   background-color: white;
   border-radius: 10px;
-  height: 30vh;
-  width: 10vw;
+  height: 280px;
+  width: 200px;
   transition: 0.5s;
   box-shadow: 10px 10px 10px 0px rgba(25, 42, 70, 0.2);
 }
@@ -153,16 +150,18 @@
 }
 
 .portfolio-content-dec {
-  height: 100%;
+  height: 80%;
   border-top: 1px solid black;
 }
 
 .portfolio-content-image {
-  height: 60vh;
+  width: 100%;
+  height: 500px;
 }
 
 .portfolio-content-image img {
   border-radius: 10px 10px 0 0;
+  width: 100%;
   height: 100%;
 }
 
@@ -171,18 +170,23 @@
   font-weight: bold;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+}
+
+.portfolio-content-dec-textbox span {
+  margin-bottom: 25px;
 }
 
 .portfolio-content-dec-title {
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 .portfolio-content-dec-title span {
-  margin: 0 5px 0 5px;
+  margin: 5px 5px 0 5px;
 }
 
 .portfolio-content-dec-title span:nth-child(2) {
@@ -194,10 +198,65 @@
   border-radius: 5px;
 }
 
-.portfolio-content-dec-textbox span:nth-child(1) {
-  margin-top: 10px;
+.portfolio-content-dec-title span:nth-child(2):hover {
+  color: tomato;
+  transition: 0.5s;
 }
 
-.portfolio-content-dec-textbox span:nth-child(2) {
-  margin-top: 10px;
+.contect-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 500px;
+  height: 500px;
+  background: rgba(85, 182, 247, 0.1);
+}
+
+.contect-content-container {
+  margin-top: 20px;
+  width: 1000px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+}
+
+.contect-content-image {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  width: 320px;
+  border-radius: 20px;
+}
+
+.contect-content-image img {
+  height: 350px;
+  width: 350px;
+  border-radius: 20px;
+}
+
+.contect-content-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+}
+
+.contect-content-text button {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+  cursor: pointer;
+  background: rgb(11, 4, 36);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.contect-content-text button:hover {
+  background: tomato;
 }
